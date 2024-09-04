@@ -1,9 +1,12 @@
+import HomeHead from '@/components/HomeHead/HomeHead';
 import React from 'react';
 
 
 const HomePage = () => {
   return (
-    <div>page</div>
+    <main>
+      <HomeHead />
+    </main>
   )
 }
 
