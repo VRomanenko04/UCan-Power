@@ -1,3 +1,4 @@
+import HomeAboutUs from '@/components/HomeAboutUs/HomeAboutUs';
 import HomeAdvantages from '@/components/HomeAdvantages/HomeAdvantages';
 import HomeContactForm from '@/components/HomeContactForm/HomeContactForm';
 import HomeHead from '@/components/HomeHead/HomeHead';
@@ -11,6 +12,7 @@ const HomePage = () => {
       <HomeHead />
       <HomeOfficialPartner />
       <HomeAdvantages />
+      <HomeAboutUs />
       <HomeContactForm />
     </main>
   )
