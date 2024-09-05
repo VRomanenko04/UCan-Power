@@ -15,3 +15,25 @@
     bottom: -5%;
     right: 5%;
 }
+
+.text__container {
+    position: absolute;
+    top: 49%;
+    left: 15%;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    p {
+        cursor: pointer;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    h1, p {
+        color: #f3f3f3
+    }
+}

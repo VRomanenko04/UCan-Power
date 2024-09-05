@@ -9,6 +9,10 @@ const HomeHead = () => {
     return (
         <section className={styles.container}>
             <Image src={HomeHeader} alt='Домівка зі світлом у блекаут' className={styles.image}/>
+            <div className={styles.text__container}>
+                <h1>UHome та  UHB для вашого <br /> дому, бізнесу, підприемства</h1>
+                <p>Дізнатись більше&gt;</p>
+            </div>
             <div className={styles.items__container}>
                 <Image src={UHome} alt='UHome установка' />
                 <Image src={UHB} alt='UHB-50AH установка' />
