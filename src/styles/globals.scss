@@ -2,3 +2,8 @@
   padding: 0;
   margin: 0;
 }
+
+html, body {
+  max-width: calc(100vw);
+  overflow-x: hidden;
+}
