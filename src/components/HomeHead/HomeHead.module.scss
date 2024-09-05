@@ -1,5 +1,17 @@
+.container {
+    position: relative;
+}
+
 .image {
     width: 100vw;
     height: auto;
     object-fit: cover;
+}
+
+.items__container {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    bottom: -5%;
+    right: 5%;
 }
