@@ -13,7 +13,9 @@ type ProductBlockProps = {
 const ProductBlock = (props: ProductBlockProps) => {
     return (
         <div className={styles.container}>
-            <Image className={styles.image} src={props.image} alt={props.description}/>
+            <div className={styles.image__container}>
+                <Image className={`${styles.image} ${!props.price ? styles.long__image: ''}`} src={props.image} alt={props.description}/>
+            </div>
             <div className={styles.title}>
                 <h6>{props.name}</h6>
                 <p>{props.price}</p>

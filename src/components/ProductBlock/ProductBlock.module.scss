@@ -10,8 +10,21 @@
     padding: 40px;
 }
 
+.image__container {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
 .image {
-    height: 190px;
+    max-height: 180px;
+    height: auto;
+    max-width: 320px;
+}
+
+.long__image {
     width: auto;
 }
 
@@ -20,14 +33,13 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    width: 100%;
+    width: 110%;
 
     h6 {
         align-self: flex-start;
         font-size: 20px;
         font-weight: 500;
         color: #070707;
-        margin-bottom: -10px;
     }
 
     p {
@@ -41,6 +53,8 @@
     align-self: flex-start;
     color: #070707;
     font-weight: 300;
+    margin-left: -15px;
+    width: 110%;
 }
 
 .btn {
@@ -53,5 +67,6 @@
     justify-content: center;
     text-decoration: none;
     border-radius: 10px;
+    margin-top: 10px;
     margin-bottom: -20px;
 }
