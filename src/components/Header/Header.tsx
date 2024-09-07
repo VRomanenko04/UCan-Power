@@ -15,12 +15,12 @@ const Header = () => {
     return (
         <nav className={styles.navbar}>
             <Link className={styles.logo} href='/'>
-                <Image src={pathname === '/' ? Logo_bw : Logo_color} alt='ucan power logo'/>
+                <Image className={styles.logo__image} src={pathname === '/' ? Logo_bw : Logo_color} alt='ucan power logo'/>
             </Link>
             <ul className={styles.list}>
                 <li><Link className={`${pathname === '/' ? styles.link : styles.black__link} ${pathname === '/models' ? styles.active : ''}`} href='/models'>МОДЕЛЬНИЙ РЯД</Link></li>
                 <li className={styles.telephone__container}>
-                    <Image src={pathname === '/' ? TelephoneIcon: TelephoneIconBlack} alt='telephone icon'/>
+                    <Image className={styles.icon} src={pathname === '/' ? TelephoneIcon: TelephoneIconBlack} alt='telephone icon'/>
                     <a className={pathname === '/' ? styles.telephone: styles.telephone__black} href="tel:0507771379">0507771379</a>
                 </li>
             </ul>

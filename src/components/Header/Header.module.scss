@@ -57,3 +57,57 @@
         font-weight: 500;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .logo,
+    .logo__image {
+        width: 170px;
+        height: auto;
+    }
+
+    .link,
+    .black__link {
+        display: none;
+    }
+
+    .telephone__container {
+        .telephone,
+        .telephone__black {
+            font-size: 16px;
+        }
+    }
+
+    .icon {
+        height: 18px;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .logo,
+    .logo__image {
+        width: 220px;
+        height: auto;
+    }
+
+    .list {
+        gap: 20px;
+    }
+
+    .link,
+    .black__link {
+        font-size: 16px;
+    }
+
+    .telephone__container {
+        .telephone,
+        .telephone__black {
+            font-size: 16px;
+        }
+    }
+
+    .icon {
+        height: 18px;
+        width: auto;
+    }
+}
