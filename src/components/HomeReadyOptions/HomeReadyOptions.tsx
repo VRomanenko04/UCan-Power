@@ -11,7 +11,7 @@ const HomeReadyOptions = () => {
     return (
         <section className={styles.wrapper}>
             <div className={styles.container}>
-                <Link href='/' className={styles.title}>ГОТОВІ РІШЕННЯ <Image src={Arrow} alt='arrow'/></Link>
+                <Link href='/models' className={styles.title}>ГОТОВІ РІШЕННЯ <Image src={Arrow} alt='arrow'/></Link>
                 <section className={styles.products__container}>
                     {products.ready_solutions.map((product) => (
                         <div key={product.name}>

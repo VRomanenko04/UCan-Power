@@ -19,7 +19,7 @@ const ProductBlock = (props: ProductBlockProps) => {
                 <p>{props.price}</p>
             </div>
             <p className={styles.description}>{props.description}</p>
-            <Link className={styles.btn} href='/'>Дізнатись більше</Link>
+            <Link className={styles.btn} href='/models'>Дізнатись більше</Link>
         </div>
     )
 }
