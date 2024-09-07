@@ -17,3 +17,41 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+@media screen and (max-width: 730px) {
+    .wrapper {
+        margin-top: 100px;
+        align-items: center;
+        width: 360px;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+}
+
+@media screen and (min-width: 730px) and (max-width: 1300px) {
+    .wrapper {
+        margin-top: 100px;
+        align-items: center;
+        width: 550px;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
