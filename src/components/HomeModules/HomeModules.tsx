@@ -14,12 +14,14 @@ const HomeModules = () => {
                 <Link href='/' className={styles.title}>ОКРЕМІ МОДУЛІ <Image src={Arrow} alt='arrow'/></Link>
                 <section className={styles.products__container}>
                     {products.modules.slice(0, 7).map((product) => (
-                        <ProductBlock 
-                            name={product.name}
-                            description={product.description}
-                            image={product.image}
-                            price={product.price}
-                        />
+                        <div key={product.name}>
+                            <ProductBlock 
+                                name={product.name}
+                                description={product.description}
+                                image={product.image}
+                                price={product.price}
+                            />
+                        </div>
                     ))}
                 </section>
             </div>
