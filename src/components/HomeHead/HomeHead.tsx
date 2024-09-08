@@ -1,23 +1,42 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useState } from 'react';
 import styles from './HomeHead.module.scss';
 import Image from 'next/image';
 import HomeHeader from '@/assets/ucan-power_header.png';
+import ModileHomeHeader from '@/assets/ucan-power_mobileheader.png';
 import UHome from '@/assets/ucan-power_UHome.png';
 import UHB from '@/assets/ucan-power_UHB.png';
+import { useMediaQuery } from 'react-responsive';
 
 const HomeHead = () => {
-    return (
+    const [isMounted, setIsMounted] = useState(false);
+    
+    const isMobile = useMediaQuery({ query: '(max-width: 800px)' });
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    const content = (
         <section className={styles.container}>
-            <Image src={HomeHeader} alt='Домівка зі світлом у блекаут' className={styles.image}/>
+            <Image src={ !isMobile ? HomeHeader : ModileHomeHeader} alt='Домівка зі світлом у блекаут' className={styles.image}/>
             <div className={styles.text__container}>
                 <h1>UHome та  UHB для вашого <br /> дому, бізнесу, підприемства</h1>
                 <p>Дізнатись більше&gt;</p>
             </div>
             <div className={styles.items__container}>
-                <Image src={UHome} alt='UHome установка' />
-                <Image src={UHB} alt='UHB-50AH установка' />
+                <Image className={styles.item} src={UHome} alt='UHome установка' />
+                <Image className={styles.item} src={UHB} alt='UHB-50AH установка' />
             </div>
         </section>
+    );
+
+    if (!isMounted) {
+        return null;
+    }
+
+    return (
+        content
     )
 }
 
