@@ -17,7 +17,7 @@ const HomeAdvantages = () => {
                     <h3>ЛЕГКІСТЬ У ВИКОРИСТАННІ </h3>
                 </div>
                 <div className={styles.item}>
-                    <h3>МОНІТОРИНГ У РЕАЛЬНОМУ ЧАСІ ЧЕРЕЗ ДОДАТОК</h3>
+                    <h3>МОНІТОРИНГ У РЕАЛЬНОМУ ЧАСІ ЧЕРЕЗ ДОДАТОК <strong className={styles.ucaness}>UCANESS</strong></h3>
                 </div>
             </div>
         </section>

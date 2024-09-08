@@ -17,6 +17,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 0 20px;
 }
 
 .item {
@@ -28,15 +29,87 @@
     justify-content: center;
     border-radius: 20px; 
 
-    p {
+    h3 {
         font-size: 24px;
         font-weight: 500;
         color: #070707;
+        text-align: center;
     }
 }
 
-.item:last-child {
-    grid-column: 1 / -1;
-    justify-self: center;
-    padding: 0 150px;
+.ucaness {
+    color: #a52c21;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        margin-top: 150px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .item {
+        height: 40px;
+        padding: 0 20px;
+        width: 300px;
+        border-radius: 5px; 
+    
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    .item:last-child {
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .wrapper {
+        margin-top: 150px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .item {
+        height: 60px;
+        padding: 0 20px;
+        width: 400px;
+        border-radius: 5px; 
+    
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    .item:last-child {
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .item:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        padding: 0 150px;
+    }    
 }
