@@ -1,14 +1,25 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useState } from 'react';
 import styles from './HomeAboutUs.module.scss';
 import Building_image from '@/assets/ucan-power_building.png';
+import Modile_building_image from '@/assets/ucan-power_buildingmobile.png';
 import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
 
 
 const HomeAboutUs = () => {
-    return (
+    const [isMounted, setIsMounted] = useState(false);
+    
+    const isMobile = useMediaQuery({ query: '(max-width: 800px)' });
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    const content = (
         <section className={styles.container}>
             <div className={styles.image__container}>
-                <Image className={styles.image} src={Building_image} alt='Завод UCan Power'/>
+                <Image className={styles.image} src={!isMobile ? Building_image : Modile_building_image} alt='Завод UCan Power'/>
                 <h3>ПРО UCANPOWER</h3>
             </div>
             <div className={styles.text__container}>
@@ -16,6 +27,14 @@ const HomeAboutUs = () => {
                 <p>UCANPOWER - успішно експортує обладнання в понад 30 країн, включаючи Європу, Японію, Австралію, Південно-Східну Азію, Південну Америку та країни Африки.</p>
             </div>
         </section>
+    )
+
+    if (!isMounted) {
+        return null;
+    }
+
+    return (
+        content
     )
 }
 
