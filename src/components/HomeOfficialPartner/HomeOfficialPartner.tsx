@@ -12,15 +12,15 @@ const HomeOfficialPartner = () => {
             <h2 className={styles.title}>ОФІЦІЙНИЙ ПАРТНЕР В УКРАЇНІ</h2>
             <div className={styles.container}>
                 <div className={styles.item__container}>
-                    <Image src={Box_icon} alt='Іконка коробки'/>
+                    <Image className={styles.icon} src={Box_icon} alt='Іконка коробки'/>
                     <h3>ПРЯМІ ПОСТАВКИ</h3>
                 </div>
                 <div className={`${styles.central__item} ${styles.item__container}`}>
-                    <Image src={Mashine_icon} alt='Іконка шестерні'/>
+                    <Image className={styles.icon} src={Mashine_icon} alt='Іконка шестерні'/>
                     <h3>УСТАНОВКА <br/> ОБЛАДНАННЯ</h3>
                 </div>
                 <div className={styles.item__container}>
-                    <Image src={Certificate_icon} alt='Іконка сертифікату'/>
+                    <Image className={styles.icon} src={Certificate_icon} alt='Іконка сертифікату'/>
                     <h3>ОФІЦІЙНА ГАРАНТІЯ</h3>
                 </div>
             </div>
