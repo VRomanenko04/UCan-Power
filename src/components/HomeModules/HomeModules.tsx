@@ -11,7 +11,7 @@ const HomeModules = () => {
     return (
         <section className={styles.wrapper}>
             <div className={styles.container}>
-                <Link href='/models' className={styles.title}>ОКРЕМІ МОДУЛІ <Image src={Arrow} alt='arrow'/></Link>
+                <Link href='/models' className={styles.title}>ОКРЕМІ МОДУЛІ <Image className={styles.arrow} src={Arrow} alt='arrow'/></Link>
                 <section className={styles.products__container}>
                     {products.modules.slice(0, 7).map((product) => (
                         <div key={product.name}>
