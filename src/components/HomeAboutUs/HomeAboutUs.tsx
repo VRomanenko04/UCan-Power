@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './HomeAboutUs.module.scss';
 import Building_image from '@/assets/ucan-power_building.png';
-import Modile_building_image from '@/assets/ucan-power_buildingmobile.png';
+import Modile_building_image from '@/assets/ucanpower_buildingmobilka.webp';
 import Image from 'next/image';
 import { useMediaQuery } from 'react-responsive';
 
