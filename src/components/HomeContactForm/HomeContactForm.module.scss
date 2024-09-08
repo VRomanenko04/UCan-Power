@@ -93,3 +93,129 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        gap: 40px;
+        margin-top: 150px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .form {
+        max-width: 360px;
+    }
+
+    .inputs__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input__block {
+        label {
+            font-size: 16px;
+        }
+    
+        input {
+            min-width: 340px;
+            height: 40px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    }
+
+    .textarea__block {    
+        label {
+            font-size: 16px;
+        }
+    
+        textarea {
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    }
+
+    .btn {
+        width: 360px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .container {
+        gap: 40px;
+        margin-top: 150px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .form {
+        max-width: 560px;
+    }
+
+    .inputs__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input__block {
+        label {
+            font-size: 18px;
+        }
+    
+        input {
+            min-width: 540px;
+            height: 40px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+    }
+
+    .textarea__block {    
+        label {
+            font-size: 18px;
+        }
+    
+        textarea {
+            font-size: 18px;
+            border-radius: 5px;
+        }
+    }
+
+    .btn {
+        width: 560px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .form {
+        max-width: 980px;
+    }
+
+    .input__block {    
+        input {
+            min-width: 455px;
+            height: 50px;
+            color: #070707;
+            font-size: 20px;
+            padding: 0 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #f2f4f5;
+        }
+    }
+}
