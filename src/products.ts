@@ -44,6 +44,15 @@ export const products = {
             "type": "Інвертор"
         },
         {
+            "name": "UHome-8K0L",
+            "searchTag": "UHome-8K0L",
+            "description": "8kW,  Однофазний Гібридний інвертор",
+            "image": UHome_invertor,
+            "price": "58 000 ₴",
+            "tag": "UHome",
+            "type": "Інвертор"
+        },
+        {
             "name": "UHC-10KT",
             "searchTag": "UHC-10KT",
             "description": "10kW,  Трьохфазний Гібридний інвертор",
