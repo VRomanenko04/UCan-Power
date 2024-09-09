@@ -4,6 +4,7 @@ import styles from '@/styles/ProductPage.module.scss';
 import { StaticImageData } from 'next/image';
 import LinksString from '@/components/LinksString/LinksString';
 import ProductHead from '@/components/ProductHead/ProductHead';
+import ProductPresentation from '@/components/ProductPresentation/ProductPresentation';
 
 type ProductPageProps = {
     params: {
@@ -48,7 +49,7 @@ const ProductPage = ({ params: {name} }: ProductPageProps) => {
                     price={product.price}
                     description={product.description}
                 />
-                {/* <ProductPresentation /> */}
+                <ProductPresentation name={product.name}/>
             </main>
         )
     }
