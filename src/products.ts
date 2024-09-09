@@ -12,12 +12,14 @@ import UHB_base from '@/assets/ucan-power_base2.png';
 export const products = {
     ready_solutions: [
         {
-            "name": "UHome  All in One ESS",
+            "name": "UHome All in One ESS",
+            "searchTag": "UHome-All-in-One-ESS",
             "description": "Система низьковольтної батареї",
             "image": UHomeAll
         },
         {
             "name": "UHB 50Ah",
+            "searchTag": "UHB-50Ah",
             "description": "Система високовольтної батареї",
             "image": UHB50
         }
@@ -25,6 +27,7 @@ export const products = {
     modules: [
         {
             "name": "UHome-5K0L",
+            "searchTag": "UHome-5K0L",
             "description": "5kW,  Однофазний Гібридний інвертор",
             "image": UHome_invertor,
             "price": "49 000 ₴",
@@ -33,6 +36,7 @@ export const products = {
         },
         {
             "name": "UHome-6K0L",
+            "searchTag": "UHome-6K0L",
             "description": "6kW,  Однофазний Гібридний інвертор",
             "image": UHome_invertor,
             "price": "50 000 ₴",
@@ -40,7 +44,8 @@ export const products = {
             "type": "Інвертор"
         },
         {
-            "name": "UHС-10KT",
+            "name": "UHC-10KT",
+            "searchTag": "UHC-10KT",
             "description": "10kW,  Трьохфазний Гібридний інвертор",
             "image": UHC,
             "price": "74 000 ₴",
@@ -48,7 +53,8 @@ export const products = {
             "type": "Інвертор"
         },
         {
-            "name": "UHС-12KT",
+            "name": "UHC-12KT",
+            "searchTag": "UHC-12KT",
             "description": "12kW,  Трьохфазний Гібридний інвертор",
             "image": UHC,
             "price": "77 000 ₴",
@@ -56,7 +62,8 @@ export const products = {
             "type": "Інвертор"
         },
         {
-            "name": "UHС-15KT",
+            "name": "UHC-15KT",
+            "searchTag": "UHC-15KT",
             "description": "15kW,  Трьохфазний Гібридний інвертор",
             "image": UHC,
             "price": "107 000 ₴",
@@ -64,7 +71,8 @@ export const products = {
             "type": "Інвертор"
         },
         {
-            "name": "UHС-20KT",
+            "name": "UHC-20KT",
+            "searchTag": "UHC-20KT",
             "description": "20kW,  Трьохфазний Гібридний інвертор",
             "image": UHC,
             "price": "118 000 ₴",
@@ -73,6 +81,7 @@ export const products = {
         },
         {
             "name": "ULB-5120MT",
+            "searchTag": "ULB-5120MT",
             "description": "51.2V/5.12kWh Модуль низьковольтної батареї",
             "image": UHome_battery,
             "price": "42 000 ₴",
@@ -81,6 +90,7 @@ export const products = {
         },
         {
             "name": "UHB2560M",
+            "searchTag": "UHB2560M",
             "description": "2.56kWh Головний акумуляторний модуль + активний еквалайзер",
             "image": UHB_battery,
             "price": "40 000 ₴",
@@ -89,6 +99,7 @@ export const products = {
         },
         {
             "name": "UHB2560S",
+            "searchTag": "UHB2560S",
             "description": "2.56kWh Модуль батареї + активний еквалайзер",
             "image": UHB_smallbattery,
             "price": "26 000 ₴",
@@ -97,6 +108,7 @@ export const products = {
         },
         {
             "name": "ULB-5120MT Base",
+            "searchTag": "ULB-5120MT-Base",
             "description": "Підставка під модуль низьковольтної батареї ULB-5120MT",
             "image": UHome_base,
             "price": "2 500 ₴",
@@ -105,6 +117,7 @@ export const products = {
         },
         {
             "name": "UHB Base",
+            "searchTag": "UHB-Base",
             "description": "Підставка під модуль батареї + активний еквалайзер UHB2560M та  UHB2560S",
             "image": UHB_base,
             "price": "2 500 ₴",
