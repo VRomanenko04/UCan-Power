@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.text__container {
+    position: absolute;
+    max-width: 1180px;
+    width: 100%;
+    top: 40%;
+}
+
+.image {
+    width: 100vw;
+    height: auto;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #070707;
+    margin-bottom: 20px;
+}
+
+.description {
+    width: 50%;
+    font-size: 24px;
+    color: #070707;
+}
+
+.link {
+    color: #070707;
+}
