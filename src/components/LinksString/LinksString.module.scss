@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    max-width: 1180px;
+    width: 100%;
+}
+
+.link {
+    color: #070707;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.text {
+    color: #A52C21;
+    font-weight: 300;
+    font-size: 20px;
+}
