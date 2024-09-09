@@ -31,7 +31,7 @@ const ProductBlock = (props: ProductBlockProps) => {
                 <p>{props.price}</p>
             </div>
             <p className={styles.description}>{props.description}</p>
-            <Link className={styles.btn} href='/models'>Дізнатись більше</Link>
+            <Link className={styles.btn} href={`/models/${props.name.replace(/\s+/g, '-')}`}>Дізнатись більше</Link>
         </div>
     );
 
@@ -40,7 +40,7 @@ const ProductBlock = (props: ProductBlockProps) => {
     }
 
     return isMobile ? (
-        <Link href='/models' className={styles.mobile__link}>
+        <Link href={`/models/${props.name.replace(/\s+/g, '-')}`} className={styles.mobile__link}>
             {content}
         </Link>
     ) : (
