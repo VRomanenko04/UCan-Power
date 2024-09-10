@@ -5,6 +5,7 @@ import { StaticImageData } from 'next/image';
 import LinksString from '@/components/LinksString/LinksString';
 import ProductHead from '@/components/ProductHead/ProductHead';
 import ProductPresentation from '@/components/ProductPresentation/ProductPresentation';
+import ProductCharacteristics from '@/components/ProductCharacteristics/ProductCharacteristics';
 
 type ProductPageProps = {
     params: {
@@ -17,7 +18,11 @@ type ProductObject = {
     searchTag: string;
     description: string;
     image: StaticImageData;
-    price?: string
+    price?: string;
+    tag?: string;
+    type?: string;
+    characteristics?: Record<string, string>;
+    advantages?: string[];
 }
 
 
@@ -50,6 +55,7 @@ const ProductPage = ({ params: {name} }: ProductPageProps) => {
                     description={product.description}
                 />
                 <ProductPresentation name={product.name}/>
+                <ProductCharacteristics searchTag={product.searchTag}/>
             </main>
         )
     }
