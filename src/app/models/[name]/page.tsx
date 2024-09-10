@@ -6,6 +6,7 @@ import LinksString from '@/components/LinksString/LinksString';
 import ProductHead from '@/components/ProductHead/ProductHead';
 import ProductPresentation from '@/components/ProductPresentation/ProductPresentation';
 import ProductCharacteristics from '@/components/ProductCharacteristics/ProductCharacteristics';
+import RecommendedProducts from '@/components/RecommendedProducts/RecommendedProducts';
 
 type ProductPageProps = {
     params: {
@@ -56,6 +57,7 @@ const ProductPage = ({ params: {name} }: ProductPageProps) => {
                 />
                 <ProductPresentation name={product.name}/>
                 <ProductCharacteristics searchTag={product.searchTag}/>
+                <RecommendedProducts tag={product.tag}/>
             </main>
         )
     }
