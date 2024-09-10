@@ -5,6 +5,7 @@
 
 .container {
     display: flex;
+    align-items: flex-start;
     max-width: 1180px;
     width: 100%;
 }
@@ -20,4 +21,22 @@
     color: #A52C21;
     font-weight: 300;
     font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+        max-width: 450px;
+        display: block;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .link,
+    .text {
+        font-size: 14px;
+    }
 }
