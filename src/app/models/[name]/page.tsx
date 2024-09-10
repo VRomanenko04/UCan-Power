@@ -26,11 +26,11 @@ type ProductObject = {
 }
 
 
-const findProductByName = (name: string): ProductObject | undefined => {
+const findProductByName = (name: string): any => {
     const decodedName = decodeURIComponent(name);
 
     // Ищем в массиве ready_solutions
-    let product = products.ready_solutions.find(product => product.searchTag === decodedName);
+    let product = products.ready_solutions.find(product => product.searchTag === decodedName) as any;
     
     // Если не найден в ready_solutions, ищем в модулях
     if (!product) {
