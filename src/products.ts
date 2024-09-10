@@ -157,7 +157,7 @@ export const products = {
             "description": "10kW,  Трьохфазний Гібридний інвертор",
             "image": UHC,
             "price": "74 000 ₴",
-            "tag": "UHС",
+            "tag": "UHC",
             "type": "Інвертор",
             "characteristics": {
                 "Макс. PV потужність": "15000W",
@@ -202,7 +202,7 @@ export const products = {
             "description": "12kW,  Трьохфазний Гібридний інвертор",
             "image": UHC,
             "price": "77 000 ₴",
-            "tag": "UHС",
+            "tag": "UHC",
             "type": "Інвертор",
             "characteristics": {
                 "Макс. PV потужність": "18000W",
@@ -247,7 +247,7 @@ export const products = {
             "description": "15kW,  Трьохфазний Гібридний інвертор",
             "image": UHC,
             "price": "107 000 ₴",
-            "tag": "UHС",
+            "tag": "UHC",
             "type": "Інвертор",
             "characteristics": {
                 "Макс. PV потужність": "22500W",
@@ -292,7 +292,7 @@ export const products = {
             "description": "20kW,  Трьохфазний Гібридний інвертор",
             "image": UHC,
             "price": "118 000 ₴",
-            "tag": "UHС",
+            "tag": "UHC",
             "type": "Інвертор",
             "characteristics": {
                 "Макс. PV потужність": "30000W",
