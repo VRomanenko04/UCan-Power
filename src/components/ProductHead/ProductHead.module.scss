@@ -6,6 +6,7 @@
 
 .container {
     max-width: 1180px;
+    padding: 0 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -102,4 +103,63 @@
 
 .active__relatedModel {
     border: 2px solid #A52C21;
+}
+
+.mobile__title__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        margin-top: 20px;
+    }
+
+    .container {
+        max-width: 350px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image__container {
+        width: 350px;
+        height: 350px;
+        border-radius: 10px;
+    }
+
+    .image {
+        width: 310px;
+        height: auto;
+    }
+
+    .information {
+        .title {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+        .description {
+            font-weight: 16px;
+            margin-bottom: 30px;
+        }
+        .price {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+        .btn {
+            width: 350px;
+            height: 45px;
+            background-color: transparent;
+            border: 2px solid #A52C21;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 450;
+            cursor: pointer;
+        }
+    }
 }

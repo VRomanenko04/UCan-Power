@@ -1,11 +1,12 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './ProductHead.module.scss';
 import Image, { StaticImageData } from 'next/image';
 import UHome_invertor from '@/assets/ucan-power_invertorUHome.png';
 import UHC from '@/assets/ucan-power_UHC.png';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import { useMediaQuery } from 'react-responsive';
 
 type ProductHeadProps = {
     name: string
@@ -58,8 +59,15 @@ const relatedModelsUHC = [
 
 const ProductHead = (props: ProductHeadProps) => {
     const pathname = usePathname();
-
     const lastSegment = pathname.split('/').pop();
+
+    const [isMounted, setIsMounted] = useState(false);
+    
+    const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     const showRelatedModels = (modelGroup: string) => {
         let relatedModels;
@@ -77,17 +85,28 @@ const ProductHead = (props: ProductHeadProps) => {
         ));
     };
 
-
-    return (
+    const content = (
         <section className={styles.wrapper}>
             <div className={styles.container}>
                 <div className={styles.image__container}>
                     <Image src={props.image} alt={props.description} className={styles.image}/>
                 </div>
                 <div className={styles.information}>
-                    <h6 className={styles.title}>{props.name}</h6>
-                    <p className={styles.description}>{props.description}</p>
-                    <p className={styles.price}>{props.price}</p>
+                    {!isMobile ? (
+                        <>
+                            <h6 className={styles.title}>{props.name}</h6>
+                            <p className={styles.description}>{props.description}</p>
+                            <p className={styles.price}>{props.price}</p>
+                        </>
+                    ): (
+                        <>
+                            <div className={styles.mobile__title__container}>
+                                <h6 className={styles.title}>{props.name}</h6>
+                                <p className={styles.price}>{props.price}</p>
+                            </div>
+                            <p className={styles.description}>{props.description}</p>
+                        </>
+                    )}
                     <button className={styles.btn}>Зв’язатися з нами</button>
 
                     {(props.name.startsWith("UHome") || props.name.startsWith("UHC")) && (
@@ -102,6 +121,14 @@ const ProductHead = (props: ProductHeadProps) => {
                 </div>
             </div>
         </section>
+    )
+
+    if (!isMounted) {
+        return null;
+    }
+
+    return (
+        content
     )
 }
 
