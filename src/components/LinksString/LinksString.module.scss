@@ -8,6 +8,7 @@
     align-items: flex-start;
     max-width: 1180px;
     width: 100%;
+    padding: 0 20px;
 }
 
 .link {
@@ -25,8 +26,7 @@
 
 @media screen and (max-width: 600px) {
     .container {
-        padding: 0 10px;
-        max-width: 450px;
+        max-width: 350px;
         display: block;
         display: -webkit-box;
         -webkit-line-clamp: 1;
@@ -37,6 +37,6 @@
 
     .link,
     .text {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
