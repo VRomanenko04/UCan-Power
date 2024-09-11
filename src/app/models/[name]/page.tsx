@@ -9,6 +9,7 @@ import ProductCharacteristics from '@/components/ProductCharacteristics/ProductC
 import RecommendedProducts from '@/components/RecommendedProducts/RecommendedProducts';
 import ReadySolutionHead from '@/components/ReadySolutionHead/ReadySolutionHead';
 import ReadySolutionDescription from '@/components/ReadySolutionDescription/ReadySolutionDescription';
+import ReadySolutionAdvantages from '@/components/ReadySolutionAdvantages/ReadySolutionAdvantages';
 
 type ProductPageProps = {
     params: {
@@ -59,9 +60,7 @@ const ProductPage = ({ params: {name} }: ProductPageProps) => {
                             image_mid={product.image2}
                         />
                         <ReadySolutionDescription name={product.name}/>
-                        {/* 
-                        <ReadySolutionPresentation />
-                        <ReadySolutionAdvantages /> */}
+                        <ReadySolutionAdvantages name={product.name}/>
                         <RecommendedProducts tag={product.tag}/>
                     </>
                 ) : (
