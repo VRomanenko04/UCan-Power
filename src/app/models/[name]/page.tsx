@@ -7,6 +7,8 @@ import ProductHead from '@/components/ProductHead/ProductHead';
 import ProductPresentation from '@/components/ProductPresentation/ProductPresentation';
 import ProductCharacteristics from '@/components/ProductCharacteristics/ProductCharacteristics';
 import RecommendedProducts from '@/components/RecommendedProducts/RecommendedProducts';
+import ReadySolutionHead from '@/components/ReadySolutionHead/ReadySolutionHead';
+import ReadySolutionDescription from '@/components/ReadySolutionDescription/ReadySolutionDescription';
 
 type ProductPageProps = {
     params: {
@@ -48,16 +50,34 @@ const ProductPage = ({ params: {name} }: ProductPageProps) => {
     if (product) {
         return (
             <main className={styles.wrapper}>
-                <LinksString description={product.description}/>
-                <ProductHead 
-                    name={product.name}
-                    image={product.image}
-                    price={product.price}
-                    description={product.description}
-                />
-                <ProductPresentation name={product.name}/>
-                <ProductCharacteristics searchTag={product.searchTag}/>
-                <RecommendedProducts tag={product.tag}/>
+                {(name === 'UHome-All-in-One-ESS' || name === 'UHB-50Ah') ? (
+                    <>
+                        <ReadySolutionHead 
+                            name={product.name}
+                            image_small={product.image3}
+                            image_big={product.image}
+                            image_mid={product.image2}
+                        />
+                        <ReadySolutionDescription name={product.name}/>
+                        {/* 
+                        <ReadySolutionPresentation />
+                        <ReadySolutionAdvantages /> */}
+                        <RecommendedProducts tag={product.tag}/>
+                    </>
+                ) : (
+                    <>
+                        <LinksString description={product.description}/>
+                        <ProductHead 
+                            name={product.name}
+                            image={product.image}
+                            price={product.price}
+                            description={product.description}
+                        />
+                        <ProductPresentation name={product.name}/>
+                        <ProductCharacteristics searchTag={product.searchTag}/>
+                        <RecommendedProducts tag={product.tag}/>
+                    </>
+                )}
             </main>
         )
     }
