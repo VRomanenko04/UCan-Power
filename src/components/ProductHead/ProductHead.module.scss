@@ -162,4 +162,22 @@
             cursor: pointer;
         }
     }
+
+    .other__models {
+        margin-top: 10px;
+    }
+
+    .related__title {
+        font-size: 16px;
+    }
+
+    .relatedModel {
+        height: 65px;
+        width: 65px;
+    
+        .small__image {
+            height: auto;
+            width: 58px;
+        }
+    }
 }
