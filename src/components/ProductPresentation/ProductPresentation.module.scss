@@ -33,3 +33,72 @@
 .link {
     color: #070707;
 }
+
+@media screen and (max-width: 450px) {
+    .text__container {
+        max-width: 350px;
+        top: 10%;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .description {
+        width: 60%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 700px) {
+    .text__container {
+        max-width: 350px;
+        top: 20%;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .description {
+        width: 60%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .text__container {
+        max-width: 650px;
+        top: 30%;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .description {
+        width: 60%;
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .text__container {
+        max-width: 850px;
+        top: 40%;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    .description {
+        width: 60%;
+        font-size: 22px;
+    }
+}
