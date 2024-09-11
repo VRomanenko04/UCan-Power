@@ -34,3 +34,72 @@
     font-weight: 300;
     margin-top: 10px;
 }
+
+.list {
+    list-style: none;
+}
+
+.hidden__part {
+    height: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.show {
+    height: auto;
+    transition: height 1s linear;
+}
+
+.show__btn {
+    cursor: pointer;
+
+    .btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.arrow {
+    margin-top: 3px;
+    transform: rotate(90deg);
+}
+
+.arrow__up {
+    transform: rotate(-90deg);
+    margin-top: 3px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        margin-top: 50px;
+    }
+
+    .container {
+        max-width: 1180px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+    .title {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .string {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+}
