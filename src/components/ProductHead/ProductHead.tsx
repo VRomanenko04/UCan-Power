@@ -107,7 +107,9 @@ const ProductHead = (props: ProductHeadProps) => {
                             <p className={styles.description}>{props.description}</p>
                         </>
                     )}
-                    <button className={styles.btn}>Зв’язатися з нами</button>
+                    <a href="tel:0507771379" className={styles.telephone}>
+                        <div className={styles.btn}>Зв’язатися з нами</div>
+                    </a>
 
                     {(props.name.startsWith("UHome") || props.name.startsWith("UHC")) && (
                         <div className={styles.other__models}>
