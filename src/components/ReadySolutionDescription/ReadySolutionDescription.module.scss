@@ -42,6 +42,11 @@
     cursor: pointer;
 }
 
+.btn__container {
+    display: flex;
+    flex-direction: column;
+}
+
 .presentation__container {
     margin-top: 200px;
 }
