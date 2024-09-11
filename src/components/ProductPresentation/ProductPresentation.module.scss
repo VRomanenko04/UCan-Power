@@ -35,6 +35,10 @@
 }
 
 @media screen and (max-width: 450px) {
+    .container {
+        margin-top: 100px;
+    }
+    
     .text__container {
         max-width: 350px;
         top: 10%;
@@ -52,6 +56,10 @@
 }
 
 @media screen and (min-width: 450px) and (max-width: 700px) {
+    .container {
+        margin-top: 100px;
+    }
+
     .text__container {
         max-width: 350px;
         top: 20%;
