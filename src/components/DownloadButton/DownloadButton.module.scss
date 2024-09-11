@@ -1,0 +1,19 @@
+.link {
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 380px;
+    height: 45px;
+    background-color: transparent;
+    border: 2px solid #070707;
+    color: #070707;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 450;
+    cursor: pointer;
+}
