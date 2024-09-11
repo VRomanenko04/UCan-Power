@@ -27,6 +27,7 @@
 @media screen and (max-width: 600px) {
     .container {
         max-width: 350px;
+        margin-bottom: 10px;
         display: block;
         display: -webkit-box;
         -webkit-line-clamp: 1;
@@ -38,5 +39,9 @@
     .link,
     .text {
         font-size: 16px;
+    }
+
+    .text {
+        color: #A52C21;
     }
 }
