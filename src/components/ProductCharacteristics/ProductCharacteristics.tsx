@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './ProductCharacteristics.module.scss';
 import { products } from '@/products';
 import { useMediaQuery } from 'react-responsive';
+import DownloadButton from '../DownloadButton/DownloadButton';
 
 type Props = {
     searchTag: string
@@ -42,6 +43,9 @@ const ProductCharacteristics = (props: Props) => {
                     {firstColumnEntries.map(([key, value]) => (
                         <li className={styles.string} key={key}>{key} - {value as string}</li>
                     ))}
+                    <div style={{ marginTop: 50 }}>
+                        <DownloadButton />
+                    </div>
                 </ul>
             )}
             <div>
@@ -98,6 +102,9 @@ const ProductCharacteristics = (props: Props) => {
                     <p className={styles.btn}>{!isOpen ? 'Показати всі' : 'Сховати всі'} <p className={`${!isOpen ? styles.arrow : styles.arrow__up}`}>&gt;</p></p>
                 </div>
             )}
+            <div style={{ marginTop: 30}}>
+                <DownloadButton />
+            </div>
         </div>
     )
 
