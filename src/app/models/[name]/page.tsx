@@ -53,6 +53,7 @@ const ProductPage = ({ params: {name} }: ProductPageProps) => {
             <main className={styles.wrapper}>
                 {(name === 'UHome-All-in-One-ESS' || name === 'UHB-50Ah') ? (
                     <>
+                        <LinksString description={product.description}/>
                         <ReadySolutionHead 
                             name={product.name}
                             image_small={product.image3}
