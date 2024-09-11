@@ -17,3 +17,9 @@
     font-weight: 450;
     cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+    .button {
+        width: 350px;
+    }
+}
