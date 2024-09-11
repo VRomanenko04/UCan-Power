@@ -26,14 +26,15 @@
         font-weight: 500;
     }
 
-    p {
+    .link {
         cursor: pointer;
         margin-top: 10px;
         font-size: 16px;
         font-weight: 300;
+        text-decoration: none;
     }
 
-    h1, p {
+    h1, .link {
         color: #f3f3f3
     }
 }
@@ -53,12 +54,12 @@
         left: 10%;
     
         h1 {
-            font-size: 16px;
+            font-size: 18px;
         }
     
-        p {
+        .link {
             margin-top: 5px;
-            font-size: 12px;
+            font-size: 14px;
         }
     }
 }
@@ -81,7 +82,7 @@
             font-size: 22px;
         }
     
-        p {
+        .link {
             margin-top: 5px;
             font-size: 14px;
         }
@@ -106,7 +107,7 @@
             font-size: 30px;
         }
     
-        p {
+        .link {
             margin-top: 10px;
             font-size: 14px;
         }

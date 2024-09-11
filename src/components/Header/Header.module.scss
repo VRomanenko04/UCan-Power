@@ -59,9 +59,23 @@
 }
 
 @media screen and (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 3vw;
+        position: absolute;
+        width: 90%;
+    }
+
+    .list {
+        gap: 30px;
+    }
+
     .logo,
     .logo__image {
-        width: 170px;
+        width: 200px;
         height: auto;
     }
 
