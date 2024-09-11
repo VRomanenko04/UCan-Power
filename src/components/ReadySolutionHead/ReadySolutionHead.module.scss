@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    margin-top: 200px;
+    margin-top: 70px;
 }
 
 .title {
@@ -20,4 +20,26 @@
     background-color: #f2f4f5;
     width: 100%;
     border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        gap: 30px;
+        margin-top: 10px;
+        flex-direction: column-reverse;
+    }
+
+    .container {
+        height: 300px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .image {
+        width: 110px;
+        height: auto;
+        margin-bottom: 30px;
+    }
 }
