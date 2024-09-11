@@ -1,5 +1,9 @@
-import UHomeAll from '@/assets/ucan-power_UHome.png';
-import UHB50 from '@/assets/ucan-power_UHB.png';
+import UHomeAll from '@/assets/UHome_big_image.svg';
+import UHome_mid from '@/assets/UHome__middle_size.svg';
+import UHome_small from '@/assets/UHome_small_size.svg';
+import UHB50 from '@/assets/UHB50_big_size.svg';
+import UHB50_mid from '@/assets/UHB50_mid_size.svg';
+import UHB50_small from '@/assets/UHB50_small_size.svg';
 import UHome_invertor from '@/assets/ucan-power_invertorUHome.png';
 import UHC from '@/assets/ucan-power_UHC.png';
 import UHome_battery from '@/assets/ucan-power_battery.png'
@@ -16,6 +20,9 @@ export const products = {
             "searchTag": "UHome-All-in-One-ESS",
             "description": "Система низьковольтної батареї",
             "image": UHomeAll,
+            "image2": UHome_mid,
+            "image3": UHome_small,
+            "tag": "UHome",
             "advantages": [
                 "Проста установка завдяки модульній і багатошаровій конструкції",
                 "Гнучке розширення ємності батареї, 5~40 кВт/год",
@@ -28,6 +35,9 @@ export const products = {
             "searchTag": "UHB-50Ah",
             "description": "Система високовольтної батареї",
             "image": UHB50,
+            "image2": UHB50_mid,
+            "image3": UHB50_small,
+            "tag": "UHB",
             "advantages": [
                 "Проста установка завдяки модульній і багатошаровій конструкції",
                 "Гнучке розширення ємності батареї від 7,68 кВт-год до 25,6 кВт-год",
@@ -347,7 +357,7 @@ export const products = {
             },
             "physicCharacteristics": {
                 "Розмір, мм [Ш x Г x В]": "675*200*620",
-                "Вага": "70кг"
+                "Вага": "53.6кг"
             }
         },
         {
