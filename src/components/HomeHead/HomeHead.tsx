@@ -4,8 +4,8 @@ import styles from './HomeHead.module.scss';
 import Image from 'next/image';
 import HomeHeader from '@/assets/ucan-power_header.png';
 import ModileHomeHeader from '@/assets/ucanpowerbg_mobilka.webp';
-import UHome from '@/assets/ucan-power_UHome.png';
-import UHB from '@/assets/ucan-power_UHB.png';
+import UHome from '@/assets/UHome_big_image.svg';
+import UHB from '@/assets/UHB50_big_size.svg';
 import { useMediaQuery } from 'react-responsive';
 import Link from 'next/link';
 
