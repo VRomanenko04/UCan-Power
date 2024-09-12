@@ -10,7 +10,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 20px;
+    padding: 40px 5vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -71,7 +71,10 @@
         align-items: center;
         justify-content: space-around;
         position: absolute;
-        max-width: 350px;
+    }
+
+    .telephone__container {
+        margin-left: 0;
     }
 
     .list {
@@ -80,7 +83,7 @@
 
     .logo,
     .logo__image {
-        width: 140px;
+        width: 200px;
         height: auto;
     }
 
