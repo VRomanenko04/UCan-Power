@@ -15,7 +15,7 @@ const Footer = () => {
             <div className={styles.info}>
                 <a className={`${styles.link} ${styles.telephone__link}`} href="tel:0507771379"><Image className={styles.telephone} src={TelephoneIconBlack} alt='telephone icon'/>0507771379</a>
                 <a className={styles.link} href="mailto:ucanpower@ukr.net">ucanpower@ukr.net</a>
-                <p>м.Харків, вул.Клочківська 176</p>
+                <p>м.Харків, вул.Клочківська 174</p>
             </div>
         </footer>
     )
