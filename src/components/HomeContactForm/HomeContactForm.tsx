@@ -12,10 +12,34 @@ interface IContactForm {
 
 const HomeContactForm = () => {
 
-    const { register, handleSubmit } = useForm<IContactForm>();
+    const { register, handleSubmit, reset } = useForm<IContactForm>();
 
-    const onSubmit = (data: IContactForm) => {
-        console.log(data);
+    const onSubmit = async (data: IContactForm) => {
+        const requestBody: { [key: string]: any } = {
+            name: data.clientName,
+            email: data.email,
+            telephone: data.phoneNumber,
+            message: data.message,
+        };
+
+        const response = await fetch('/api/sendMail', {
+            method: 'POST',
+            body: JSON.stringify(requestBody),
+        });
+
+        if (response.ok) {
+            // Отправка данных в Firebase Realtime Database
+            try {
+                console.log('Письмо успешно отправлено и данные сохранены в базе данных!');
+            } catch (err) {
+                console.error('Ошибка при сохранении данных в базе данных:', err);
+            }
+
+            reset(); // Сброс формы после успешной отправки и сохранения
+        } else {
+            // Обработка ошибки отправки
+            alert('Ошибка при отправке письма');
+        }
     }
 
     return (
