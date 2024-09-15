@@ -4,15 +4,17 @@ import styles from './HomeContactForm.module.scss';
 import { useForm } from 'react-hook-form';
 
 interface IContactForm {
-    clientName: string
-    phoneNumber: number
-    email: string
-    message: string
+    'clientName': string
+    'phoneNumber': number
+    'email': string
+    'message': string
 }
 
 const HomeContactForm = () => {
 
-    const { register, handleSubmit, reset } = useForm<IContactForm>();
+    const { register, handleSubmit, reset } = useForm<IContactForm>({
+        mode: 'onSubmit'
+    });
 
     const onSubmit = async (data: IContactForm) => {
         const requestBody: { [key: string]: any } = {
