@@ -94,7 +94,58 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
+    .container {
+        gap: 40px;
+        margin-top: 150px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .form {
+        max-width: 330px;
+    }
+
+    .inputs__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input__block {
+        label {
+            font-size: 16px;
+        }
+    
+        input {
+            min-width: 310px;
+            height: 40px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    }
+
+    .textarea__block {    
+        label {
+            font-size: 16px;
+        }
+    
+        textarea {
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    }
+
+    .btn {
+        width: 330px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 600px) {
     .container {
         gap: 40px;
         margin-top: 150px;

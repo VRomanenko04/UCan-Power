@@ -44,7 +44,32 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
+    .items__container {
+        gap: 10px;
+    }
+
+    .item {
+        height: 160px;
+        width: auto;
+    }
+
+    .text__container {
+        top: 43%;
+        left: 10%;
+    
+        h1 {
+            font-size: 18px;
+        }
+    
+        .link {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 600px) {
     .items__container {
         gap: 10px;
     }
@@ -55,7 +80,7 @@
     }
 
     .text__container {
-        top: 45%;
+        top: 43%;
         left: 10%;
     
         h1 {
