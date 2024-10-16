@@ -52,7 +52,7 @@ export const products = {
             "searchTag": "UHome-5K0L",
             "description": "5kW,  Однофазний Гібридний інвертор",
             "image": UHome_invertor,
-            "price": "49 000 ₴",
+            "price": "54 000 ₴",
             "tag": "UHome",
             "type": "Інвертор",
             "characteristics": {
@@ -90,7 +90,7 @@ export const products = {
             "searchTag": "UHome-6K0L",
             "description": "6kW,  Однофазний Гібридний інвертор",
             "image": UHome_invertor,
-            "price": "50 000 ₴",
+            "price": "56 000 ₴",
             "tag": "UHome",
             "type": "Інвертор",
             "characteristics": {
@@ -128,7 +128,7 @@ export const products = {
             "searchTag": "UHome-8K0L",
             "description": "8kW,  Однофазний Гібридний інвертор",
             "image": UHome_invertor,
-            "price": "58 000 ₴",
+            "price": "66 000 ₴",
             "tag": "UHome",
             "type": "Інвертор",
             "characteristics": {
@@ -166,7 +166,7 @@ export const products = {
             "searchTag": "UHC-10KT",
             "description": "10kW,  Трьохфазний Гібридний інвертор",
             "image": UHC,
-            "price": "74 000 ₴",
+            "price": "85 000 ₴",
             "tag": "UHC",
             "type": "Інвертор",
             "characteristics": {
@@ -211,7 +211,7 @@ export const products = {
             "searchTag": "UHC-12KT",
             "description": "12kW,  Трьохфазний Гібридний інвертор",
             "image": UHC,
-            "price": "77 000 ₴",
+            "price": "88 000 ₴",
             "tag": "UHC",
             "type": "Інвертор",
             "characteristics": {
@@ -256,7 +256,7 @@ export const products = {
             "searchTag": "UHC-15KT",
             "description": "15kW,  Трьохфазний Гібридний інвертор",
             "image": UHC,
-            "price": "107 000 ₴",
+            "price": "123 000 ₴",
             "tag": "UHC",
             "type": "Інвертор",
             "characteristics": {
@@ -301,7 +301,7 @@ export const products = {
             "searchTag": "UHC-20KT",
             "description": "20kW,  Трьохфазний Гібридний інвертор",
             "image": UHC,
-            "price": "118 000 ₴",
+            "price": "136 000 ₴",
             "tag": "UHC",
             "type": "Інвертор",
             "characteristics": {
@@ -346,7 +346,7 @@ export const products = {
             "searchTag": "ULB-5120MT",
             "description": "51.2V/5.12kWh Модуль низьковольтної батареї",
             "image": UHome_battery,
-            "price": "42 000 ₴",
+            "price": "54 000 ₴",
             "tag": "UHome",
             "type": "Батарея",
             "characteristics": {
@@ -365,12 +365,12 @@ export const products = {
             "searchTag": "UHB2560M",
             "description": "2.56kWh Головний акумуляторний модуль + активний еквалайзер",
             "image": UHB_battery,
-            "price": "40 000 ₴",
+            "price": "46 000 ₴",
             "tag": "UHB",
             "type": "Батарея",
             "physicCharacteristics": {
-                "Розмір, мм [Ш x Г x В]": "851*255*???",
-                "Вага": "?кг"
+                "Розмір, мм [Ш x Г x В]": "851*255*...",
+                "Вага": "...кг"
             }
         },
         {
@@ -378,7 +378,7 @@ export const products = {
             "searchTag": "UHB2560S",
             "description": "2.56kWh Модуль батареї + активний еквалайзер",
             "image": UHB_smallbattery,
-            "price": "26 000 ₴",
+            "price": "30 000 ₴",
             "tag": "UHB",
             "type": "Батарея",
             "physicCharacteristics": {
@@ -391,12 +391,12 @@ export const products = {
             "searchTag": "ULB-5120MT-Base",
             "description": "Підставка під модуль низьковольтної батареї ULB-5120MT",
             "image": UHome_base,
-            "price": "2 500 ₴",
+            "price": "2 650 ₴",
             "tag": "UHome",
             "type": "Підставка",
             "physicCharacteristics": {
-                "Розмір, мм [Ш x Г x В]": "675*200*???",
-                "Вага": "?кг"
+                "Розмір, мм [Ш x Г x В]": "675*200*...",
+                "Вага": "...кг"
             }
         },
         {
@@ -404,12 +404,12 @@ export const products = {
             "searchTag": "UHB-Base",
             "description": "Підставка під модуль батареї + активний еквалайзер UHB2560M та  UHB2560S",
             "image": UHB_base,
-            "price": "2 500 ₴",
+            "price": "2 650 ₴",
             "tag": "UHB",
             "type": "Підставка",
             "physicCharacteristics": {
-                "Розмір, мм [Ш x Г x В]": "851*255*???",
-                "Вага": "?кг"
+                "Розмір, мм [Ш x Г x В]": "851*255*...",
+                "Вага": "...кг"
             }
         }
     ]
